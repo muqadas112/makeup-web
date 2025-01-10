@@ -163,14 +163,14 @@ border-radius: 20px;
 .product button:hover {
   background-color: aqua;
 }
-.products img {
+.products Image {
   width: 100%;
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
 
-.products:hover img {
+.products:hover Image {
   transform: scale(1.1)
 }
 /*contact style */

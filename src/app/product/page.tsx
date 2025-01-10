@@ -1,6 +1,6 @@
-import { Gelasio } from 'next/font/google'
+import Image from "next/image"
 import React from 'react'
-import { MdHeight } from 'react-icons/md'
+
 
 const Product = () => {
 
@@ -17,7 +17,12 @@ const Product = () => {
       <div className='products'>
         {ProductData.map((product) =>(
           <div key={product.id} className='product card'>
-            <img  src={product.image} alt={product.name} />
+            <Image
+            width={200}  
+            height={200}
+            src={product.image}
+             alt={product.name}
+             />
             <h3>{product.name}</h3>
             <p>{product.Description}</p>
             <div className='product-price'>{product.price}</div>
